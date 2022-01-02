@@ -15,7 +15,7 @@ generated, representing a lattice. At each point will be a value of +/- 1,
 representing spin-up and spin-down, respectively. The energy of each lattice
 point will be calculated by calculating the sum of the products of the spins
 with each of the points neighbours:</p>
-                            E = −∑⟨i,j⟩ J.σi.σj
+/t/t/tE = −∑⟨i,j⟩ J.σi.σj
 <p>Where E is the energy of the lattice point, i and j representing neighbouring
 points, J is the spin-spin interaction, and σi and σj are the individual spins
 of each lattice point.</p>
