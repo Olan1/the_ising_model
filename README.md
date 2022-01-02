@@ -15,7 +15,7 @@ generated, representing a lattice. At each point will be a value of +/- 1,
 representing spin-up and spin-down, respectively. The energy of each lattice
 point will be calculated by calculating the sum of the products of the spins
 with each of the points neighbours:</p>
-/t/t/tE = −∑⟨i,j⟩ J.σi.σj
+                            <p>E = −∑⟨i,j⟩ J.σi.σj</p>
 <p>Where E is the energy of the lattice point, i and j representing neighbouring
 points, J is the spin-spin interaction, and σi and σj are the individual spins
 of each lattice point.</p>
@@ -23,7 +23,7 @@ of each lattice point.</p>
 chosen and its spin flipped. The energy of this new lattice will then be
 calculated. The energy difference between both lattices will be calculated
 using:</p>
-                            Delta_E = E2 - E1
+                            <p>Delta_E = E2 - E1</p>
 <p>Where Delta_E is the energy difference, E2 is the energy of the lattice with a
 randomly flipped spin, and E1 is the energy of the original lattice.</p>
 <p>For a temperature independent simulation, if Delta_E is less than zero, the new
@@ -31,7 +31,7 @@ lattice configuration is more energy favourable and will replace the original.
 In a temperature dependent system, a temperature threshold function will be
 used to determine if a lattice configuration which is less energetically
 favourable will still replace the original lattice configuration:</p>
-                            P = exp(-Delta_E/T)
+                            <p>P = exp(-Delta_E/T)</p>
 </p>Where P is the probability distribution, Delat_E is the energy difference, and
 T is the temperature.</p>
 <p>If a randomly generated number r is less than P, the new configuration will
