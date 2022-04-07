@@ -65,6 +65,10 @@ Tf = 0.5
 
 def create_lattice(n_rows, n_cols, flag=0):
     """
+    Create a 2D array representing a 2D lattice
+    
+    ...
+    
     Parameters
     ----------
     n_rows : TYPE - Integar
@@ -96,6 +100,10 @@ def create_lattice(n_rows, n_cols, flag=0):
  
 def calculate_random_coordinate(range_max, range_min = 0):
     """
+    Calculate 2 random coordinates with a defined range
+    
+    ...
+    
     Parameters
     ----------
     range_max : TYPE - Float
@@ -112,6 +120,10 @@ def calculate_random_coordinate(range_max, range_min = 0):
 
 def flip_spin(lattice):
     '''
+    Flip to spin of a random lattice point within the lattice
+    
+    ...
+    
     Parameters
     ----------
     lattice : TYPE - 2D array
@@ -136,6 +148,10 @@ def flip_spin(lattice):
 
 def get_lattice_energy(lattice, J = -1):
     '''
+    Calculate the total energy of the lattice
+    
+    ...
+    
     Parameters
     ----------
     lattice : TYPE - 2D array
@@ -163,6 +179,11 @@ def get_lattice_energy(lattice, J = -1):
 
 def test_spin_flip(lattice, T):
     '''
+    Test if flipping the spin of a random lattice point decreases the total energy
+    of the lattice and return the lowest energy lattice.
+    
+    ...
+    
     Parameters
     ----------
     lattice : TYPE - 2D array
@@ -181,7 +202,7 @@ def test_spin_flip(lattice, T):
     lattice = np.array(lattice)
     # Calcuate energy of the original lattice
     E1 = get_lattice_energy(lattice)
-    # Fip the spin a random lattice point and save new lattice
+    # Flip the spin a random lattice point and save new lattice
     lattice_spin_flipped = flip_spin(lattice)
     # Calculate energy of the of the new lattice
     E2 = get_lattice_energy(lattice_spin_flipped)
@@ -201,6 +222,11 @@ def test_spin_flip(lattice, T):
 
 def equilibrate(n_rows, n_cols, T):
     '''
+    Run the test_spin_flip function for a calculated number of iterations to cause
+    the lattice to reach a point of equilibrium.
+    
+    ...
+    
     Parameters
     ----------
     n_rows : TYPE - Integer
@@ -227,6 +253,10 @@ def equilibrate(n_rows, n_cols, T):
 
 def animate(frame_number, frames, Tf, n_rows, n_cols):
     '''
+    Animate the progression of the lattice as it moves towards equilibrium
+    
+    ...
+    
     Parameters
     ----------
     frame_number : TYPE - Integer
@@ -255,6 +285,7 @@ def animate(frame_number, frames, Tf, n_rows, n_cols):
     pl.set_data(T_vals, Energy_vals)
     # Map colours based on lattice 2D array
     im.set_array(lattice)
+
 
 ''' Plot data '''
 # Create figure
