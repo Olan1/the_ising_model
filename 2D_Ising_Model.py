@@ -100,7 +100,7 @@ def create_lattice(n_rows, n_cols, flag=0):
  
 def calculate_random_coordinate(range_max, range_min = 0):
     """
-    Calculate 2 random coordinates with a defined range
+    Calculate 2 random coordinates within a defined range
     
     ...
     
